@@ -1,0 +1,517 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.67), rgba(0, 0, 0, 0.67)), url(img/coffebg.jpg);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+
+}
+
+@media screen and (max-width: 768px) {
+    
+    html, body {
+        overflow-x: hidden;
+        overflow-y: auto;
+        margin: 0;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+
+/* BAGIAN HEADER */
+
+.opening-text img {
+    width: 50%;
+}
+
+.nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: rgba(0, 0, 0, 0.368);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    height: 90px;
+    border-bottom: 2px solid rgb(33, 32, 29);
+}
+
+.nav-header h3 {
+    font-family: "Caveat", cursive;
+    font-size: 45px;
+    padding: 15px;
+    color: rgb(255, 255, 255);
+    letter-spacing: 2px;
+}
+
+.text-coffe {
+    color: rgb(246, 172, 108);
+}
+
+.icon-menu {
+    display: flex;
+
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.icon-menu img {
+    width: 40px;
+    margin: 5px 5px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .nav-header {
+        height: 70px;
+    }
+
+    .nav-header h3 {
+        font-size: 35px;
+        padding: 10px 5px;
+        margin-bottom: 5px;
+    }
+
+    .icon-menu img {
+        width: 25px;
+    }
+}
+
+/* BAGIAN LOGO KOPI */
+
+/* BAGIAN OPENING TEXT */
+
+.opening-text {
+    font-family: "Lexend Giga", sans-serif;
+    text-align: center;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+}
+
+.text-error {
+    color: red;
+}
+
+.deskripsi-kopi {
+    font-size: 15px;
+    padding-top: 20px;
+    max-width: 500px;
+    color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 768px) {
+
+    .opening-text {
+        font-size: 20px;
+    }
+
+    .deskripsi-kopi {
+        font-size: 9px;
+        max-width: 200px;
+    }
+    
+}
+
+/* BAGIAN DROP DOWN MENU */
+
+.icon-menu {
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+    transition: transform 0.3s ease;
+}
+
+.drop-menu.aktif {
+    right: 0;
+}
+
+.drop-menu {
+    position: fixed;
+    top: 0;
+    color: black;
+    right: -100%;
+    width: 250px;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    padding: 80px 20px;
+    transition: right 0.4s ease;
+    border-left: 1px solid rgb(33, 32, 29);
+}
+
+.drop-menu p {
+    font-family: "Lexend Giga", sans-serif;
+    padding: 20px;
+    color: rgb(246, 172, 108);
+}
+
+.drop-menu p:hover {
+    transform: translateY(-8px);
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.05));
+        border-color: rgba(255, 255, 255, 0.5);
+        box-shadow: 0 10px 25px rgba(255, 183, 77, 0.15);
+}
+
+@media screen and (max-width: 768px) {
+
+    .drop-menu p:hover {
+    transform: translateY(-8px);
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.05));
+        border-color: rgba(255, 255, 255, 0.5);
+        box-shadow: 0 10px 25px rgba(255, 183, 77, 0.15);
+
+    }
+}
+
+/* BAGIAN ABOUT KOPI */
+
+.about-kopi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 90px;
+    height: 400px;
+
+}
+
+.set-bgd {
+    display: flex;
+    flex-direction: column;
+     background-color: rgba(0, 0, 0, 0.525);
+     width: 100%;
+     height: 100%;
+     text-align: center;
+     align-items: center;
+     border-top: 1px solid rgb(33, 32, 29);
+
+}
+.about-kopi h3 {
+    font-family: "Caveat", cursive;
+    color: white;
+    font-size: 40px;
+    padding-top: 60px;
+    padding-bottom: 10px;
+}
+
+.about-kopi p {
+    padding-top: 10px;
+    color: white;
+   text-align: center;
+   font-size: 17px;
+   width: 550px;
+   justify-content: center;
+   align-items: center;
+}
+
+.text-tentang {
+    color: rgb(246, 172, 108);
+}
+
+@media screen and (max-width: 768px) {
+
+    .about-kopi p {
+        font-size: 14px;
+        width: 350px;
+    }
+
+    .about-kopi h3 {
+        font-size: 30px;
+    }
+    
+}
+
+/* BAGIAN WHY COFFE */
+
+.why-coffe {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:center;
+    background-color: rgba(0, 0, 0, 0.525);
+    height: 280px;
+    border-bottom: 1px solid rgb(33, 32, 29);
+    /*backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);*/
+}
+
+.set-row {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+
+.why-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.233);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 25px;
+    height: 120px;
+    margin: 4px 5px;
+    border: 1px solid rgb(33, 32, 29);
+}
+
+.why-desc h4 {
+    font-family: "Lexend Giga", sans-serif;
+    padding-bottom: 10px;
+    text-align: center;
+    color: rgb(246, 172, 108);
+
+}
+
+.why-desc p {
+    font-family: "Lexend Giga", sans-serif;
+    font-size: 12px;
+    text-align: left;
+    width: 350px;
+    padding: 5px 10px;
+    color: white;
+    text-align: center;
+}
+
+.font-kopi {
+    font-family: "Caveat", cursive;
+    font-size: 35px;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.why-set {
+        font-family: "Lexend Giga", sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.525);
+    }
+
+    .why-set h3 {
+        text-align: center;
+        letter-spacing: 1px;
+        color: white;
+    }
+
+    .why-desc:hover {
+        transform: translateY(-8px);
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.05));
+        border-color: rgba(255, 255, 255, 0.5);
+        box-shadow: 0 10px 25px rgba(255, 183, 77, 0.15);
+    }
+
+@media screen and (max-width: 768px) {
+
+    .why-coffe {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    box-sizing: border-box;
+    gap: 20px;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    padding: 15px 10px;
+    scroll-snap-type: x mandatory;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    }
+
+    .why-coffe::-webkit-scrollbar {
+        display: none;
+        width: 0;
+        height: 0;
+    }
+
+    .why-set {
+        font-family: "Lexend Giga", sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.525);
+    }
+
+    .why-set h3 {
+        text-align: center;
+        padding-bottom: 10px;
+        letter-spacing: 1px;
+    }
+
+    .why-desc:hover {
+        transform: translateY(-8px);
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.05));
+        border-color: rgba(255, 255, 255, 0.5);
+        box-shadow: 0 10px 25px rgba(255, 183, 77, 0.15);
+    }
+}
+
+/* BAGIAN ULASAN PEMBELI */
+
+.text-buyer {
+    font-family: "Caveat", cursive;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color: rgba(59, 29, 6, 0.355);
+    letter-spacing: 2px;
+}
+
+.text-pembeli {
+    color: rgb(246, 172, 108);
+}
+
+.buyer-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:center;
+    background-color: rgba(0, 0, 0, 0.525);
+    height: 280px;
+    border-bottom: 1px solid rgb(33, 32, 29);
+    border: 1px solid rgb(33, 32, 29);
+}
+
+.review-cont {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.review-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    background-color: rgba(255, 255, 255, 0.822);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 10px;
+    height: 120px;
+    margin: 4px 5px;
+    border: 1px solid rgb(33, 32, 29);
+    width: 300px;
+    padding: 15px 20px;
+}
+
+.review-list:hover {
+        transform: translateY(-8px);
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.05));
+        border-color: rgba(255, 255, 255, 0.5);
+        box-shadow: 0 10px 25px rgba(255, 183, 77, 0.15);
+    }
+
+.review-list h5 {
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    font-family: "Lexend Giga", sans-serif;
+}
+
+.review-list p {
+    color: rgb(0, 0, 0);
+}
+
+.text-bintang {
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .buyer-cont {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    box-sizing: border-box;
+    gap: 20px;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    padding: 15px 10px;
+    scroll-snap-type: x mandatory;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    }
+
+    .buyer-cont::-webkit-scrollbar {
+        display: none;
+        width: 0;
+        height: 0;
+    }
+
+    .review-list:hover {
+        transform: translateY(-8px);
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.05));
+        border-color: rgba(255, 255, 255, 0.5);
+        box-shadow: 0 10px 25px rgba(255, 183, 77, 0.15);
+    }
+    
+}
+
+/* BAGIAN FOOTER */ 
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.footer h4{
+    font-family: "Caveat", cursive;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+
+.footer p {
+    color: white;
+}
+
+.footer1 {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    text-align: center;
+}
+
+
+
+
