@@ -7,11 +7,11 @@
 
 body {
     background-image: 
-    linear-gradient(rgba(0, 0, 0, 0.67), rgba(0, 0, 0, 0.67)), url(img/coffebg.jpg);
+    linear-gradient(rgba(0, 0, 0, 0.197), rgba(0, 0, 0, 0.197)), url(img/coffebg.jpg);
     background-size: cover;
     background-position:center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
 
     overflow-x: hidden;
     overflow-y: auto;
@@ -133,6 +133,10 @@ body {
 
 /* BAGIAN DROP DOWN MENU */
 
+.hamburger {
+    display: flex;
+}
+
 .icon-menu {
     border: none;
     cursor: pointer;
@@ -174,6 +178,10 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+
+    .hamburger {
+        display: flex;
+    }
 
     .drop-menu p:hover {
     transform: translateY(-8px);
